@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 52, in script
+    show lucy happy delighted at left
+Exception: Image 'lucy happy' does not accept attributes 'delighted'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 52, in script
+    show lucy happy delighted at left
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\ast.py", line 1113, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\ast.py", line 1076, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\exports.py", line 739, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\display\displayable.py", line 246, in _duplicate
+    args.extraneous()
+  File "C:\Users\rizza\Downloads\Programs\renpy-8.2.3-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'lucy happy' does not accept attributes 'delighted'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+Afterlife Postal Service 1.0
+Sun Nov  3 18:28:15 2024
